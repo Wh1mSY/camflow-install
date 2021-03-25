@@ -39,7 +39,7 @@ prepare_service:
 prepare_lsm:
 	mkdir -p build
 	@echo "Downloading LSM patches..."
-	cd ./build && git clone https://github.com/camflow/camflow-patches.git
+	cd ./build && git clone https://github.com/Wh1mSY/camflow-patches.git
 	cd ./build/camflow-patches && git checkout tags/v${lsm-version}
 	cd ./build/camflow-patches && $(MAKE) prepare
 
